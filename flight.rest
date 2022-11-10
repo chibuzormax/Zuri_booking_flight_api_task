@@ -1,0 +1,43 @@
+@url = "http://localhost:3000/"
+
+
+// Getting all Flights
+GET http://localhost:3000/ HTTP/1.1
+
+#####################
+
+
+// Getting a Single Flight
+GET http://localhost:3000/e4e291fc-adb4-4205-b8f2-1aa2f7178254 HTTP/1.1
+
+#####################
+
+
+// Creating/Booking a Flight
+POST http://localhost:3000/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Flight to Calabar",
+    "time": "11:00am",
+    "price": "$150",
+    "date": "10-11-2022"
+}
+
+######################
+
+// Editing A Single Flight
+PUT http://localhost:3000/e4e291fc-adb4-4205-b8f2-1aa2f7178254 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Flight to Onitsha",
+    "time": "12:00am",
+    "price": "$200",
+    "date": "13-11-2022"
+}
+
+#######################
+
+// Deleting a Booked Flight
+DELETE  http://localhost:3000/e4e291fc-adb4-4205-b8f2-1aa2f7178254 HTTP/1.1
