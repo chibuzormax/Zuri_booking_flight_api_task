@@ -2,7 +2,7 @@
 
 
 // Getting all Flights
-GET http://localhost:3000/ HTTP/1.1
+GET http://localhost:3000/flight-Bookings HTTP/1.1
 
 #####################
 
@@ -14,7 +14,7 @@ GET http://localhost:3000/e4e291fc-adb4-4205-b8f2-1aa2f7178254 HTTP/1.1
 
 
 // Creating/Booking a Flight
-POST http://localhost:3000/ HTTP/1.1
+POST http://localhost:3000/flight-Bookings HTTP/1.1
 Content-Type: application/json
 
 {
